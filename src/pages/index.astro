@@ -13,8 +13,8 @@ import Stats from '~/components/widgets/Stats.astro';
 import CallToAction from '~/components/widgets/CallToAction.astro';
 
 const metadata = {
-  title: 'AstroWind — Free template for creating websites with Astro + Tailwind CSS',
-  ignoreTitleTemplate: true,
+ title: 'Odoo para Cafeterías',
+  description: 'Optimiza la gestión de tu cafetería con Odoo. Control de inventario, ventas, clientes y más.',
 };
 ---
 
@@ -25,72 +25,70 @@ const metadata = {
     actions={[
       {
         variant: 'primary',
-        text: 'Get template',
-        href: 'https://github.com/onwidget/astrowind',
+        text: 'Agendar demo',
+        href: '#contacto',
         target: '_blank',
-        icon: 'tabler:download',
+        icon: 'tabler:message',
       },
-      { text: 'Learn more', href: '#features' },
     ]}
-    image={{ src: '~/assets/images/hero-image.png', alt: 'AstroWind Hero Image' }}
+    image={{ src: '~/assets/images/hero-cafe.jpg', alt: 'Imagen de una cafetería' }}
   >
     <Fragment slot="title">
-      Free template for <span class="hidden xl:inline">creating websites with</span>
-      <span class="text-accent dark:text-white"> Astro 5.0</span> + Tailwind CSS
+ Optimiza la Gestión de tu Cafetería con <span class="text-accent dark:text-white"> Odoo</span>
     </Fragment>
 
     <Fragment slot="subtitle">
       <span class="hidden sm:inline">
-        <span class="font-semibold">AstroWind</span> is a free, customizable and production-ready template for Astro 5.0
-        + Tailwind CSS.</span
+        <span class="font-semibold">Odoo para Cafeterías</span> te ofrece una solución integral para llevar tu negocio
+        al siguiente nivel.</span
       >
-      <span class="block mb-1 sm:hidden font-bold text-blue-600">AstroWind: Production-ready.</span>
-      Suitable for Startups, Small Business, SaaS websites, Professional Portfolios, Marketing websites, Landing Pages &
-      Blogs.
+      <span class="block mb-1 sm:hidden font-bold text-blue-600">Odoo Cafeterías: Tu negocio en orden.</span>
+      Controla tu inventario, gestiona ventas, fideliza clientes y optimiza tus operaciones con un software potente y
+      fácil de usar.
     </Fragment>
   </Hero>
 
   <!-- Note Widget ******************* -->
 
-  <Note title="Philosophy:" description="Simplicity, Best Practices and High Performance" />
+  <!--<Note title="Filosofía:" description="Potenciando Cafeterías, Simplificando la Gestión" />-->
 
   <!-- Features Widget *************** -->
 
   <Features
     id="features"
-    tagline="Features"
-    title="What you get with AstroWind"
-    subtitle="One of the most professional and comprehensive templates currently on the market. Most starred & forked Astro theme in 2022, 2023 and 2024."
+    tagline="Funciones"
+    title="Beneficios de Odoo para tu Cafetería"
+    subtitle="Descubre cómo Odoo puede simplificar y mejorar cada aspecto de tu negocio, desde la gestión del inventario hasta la atención al cliente."
     items={[
       {
-        title: 'Astro + Tailwind CSS Integration',
+        title: 'Gestión de Inventario Precisa',
         description:
-          'A seamless integration between two great frameworks that offer high productivity, performance and versatility.',
-        icon: 'tabler:brand-tailwind',
+          'Controla en tiempo real tus insumos, productos y mermas para evitar pérdidas y optimizar compras.',
+        icon: 'tabler:box',
       },
       {
-        title: 'Ready-to-use Components',
+        title: 'Ventas y Punto de Venta (POS)',
         description:
-          'Widgets made with Tailwind CSS ready to be used in Marketing Websites, SaaS, Blogs, Personal Profiles, Small Business...',
-        icon: 'tabler:components',
+          'Agiliza tus ventas con una interfaz intuitiva y adaptada a la dinámica de una cafetería, incluyendo pagos divididos, propinas y descuentos.',
+        icon: 'tabler:cash',
       },
       {
-        title: 'Best Practices',
+        title: 'Gestión de Clientes (CRM)',
         description:
-          'Creating secure, efficient, and user-friendly websites that deliver exceptional experiences and lasting value.',
+          'Construye relaciones sólidas con tus clientes. Registra sus preferencias, historial de compras y crea programas de fidelidad.',
+        icon: 'tabler:users',
+      },
+      {
+        title: 'Informes y Análisis',
+        description:
+          'Obtén información valiosa sobre el rendimiento de tu negocio con informes personalizables sobre ventas, inventario y clientes.',
+        icon: 'tabler:chart-bar',
+      },
+      {
+        title: 'Integración de Módulos Adicionales',
+        description:
+          'Amplía las funcionalidades con módulos como contabilidad, empleados, marketing y más, todo dentro de una única plataforma.',
         icon: 'tabler:list-check',
-      },
-      {
-        title: 'Excellent Page Speed',
-        description:
-          'Having a good page speed impacts organic search ranking, improves user experience (UI/UX) and increase conversion rates.',
-        icon: 'tabler:rocket',
-      },
-      {
-        title: 'Search Engine Optimization (SEO)',
-        description:
-          "SEO lies in its ability to enhance a website's visibility, driving organic traffic and enabling it to reach a wider audience.",
-        icon: 'tabler:arrows-right-left',
       },
       {
         title: 'Open to new ideas and contributions',
@@ -103,25 +101,22 @@ const metadata = {
 
   <!-- Content Widget **************** -->
 
-  <Content
+  <!--<Content
     isReversed
     tagline="Inside template"
-    title="AstroWind's Blueprint: Fun Meets Functionality!"
+    title="Odoo: La Plataforma Integral para tu Cafetería"
     items={[
       {
-        title: 'Built on top of Astro 5.0',
-        description:
-          'Benefiting from the performance and developer-friendly features of this modern static site generator.',
+        title: 'Centralización de Operaciones',
+        description: 'Gestiona todos los aspectos de tu cafetería desde una única plataforma intuitiva.',
       },
       {
-        title: 'Styled using Tailwind CSS',
-        description:
-          'Facilitating rapid design and consistent styling with this highly popular utility-first CSS framework.',
+        title: 'Automatización de Procesos',
+        description: 'Reduce tareas manuales y errores con la automatización de inventario, pedidos y facturación.',
       },
       {
-        title: 'Cross-browser compatibility',
-        description:
-          'Ensure your website looks and functions consistently across various web browsers, delivering a seamless experience to all users.',
+        title: 'Flexibilidad y Escalabilidad',
+        description: 'Adapta Odoo a las necesidades específicas de tu cafetería y crece sin limitaciones.',
       },
     ]}
     image={{
@@ -130,38 +125,35 @@ const metadata = {
     }}
   >
     <Fragment slot="content">
-      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Building on modern foundations</h3>
-      Gain a competitive advantage by incorporating industry leading practices
+      <h3 class="text-2xl font-bold tracking-tight dark:text-white sm:text-3xl mb-2">Simplifica y Potencia tu Negocio</h3>
+      Odoo te ofrece las herramientas necesarias para gestionar tu cafetería de manera eficiente y efectiva.
     </Fragment>
 
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
-  </Content>
+  </Content>-->
 
   <!-- Content Widget **************** -->
 
-  <Content
+  <!--<Content
     isAfterContent
     items={[
       {
-        title: 'High level of customization',
-        description: `Tailor the template effortlessly to match your brand's identity and requirements, making your website distinct and saving you time.`,
+        title: 'Interfaz Intuitiva y Amigable',
+        description: 'Fácil de usar para todo tu personal, reduciendo el tiempo de capacitación.',
       },
       {
-        title: 'Multiple layout possibilities',
-        description:
-          'Explore various layout options to find the structure that best presents your content, enhancing user engagement and navigation.',
+        title: 'Acceso desde Cualquier Dispositivo',
+        description: 'Gestiona tu cafetería desde tu computadora, tablet o smartphone.',
       },
       {
-        title: 'Fully responsive design',
-        description:
-          "Ensure your website's optimal performance on various devices and screen sizes, providing a consistent and enjoyable user experience.",
+        title: 'Seguridad de Datos',
+        description: 'Protege tu información sensible con los altos estándares de seguridad de Odoo.',
       },
       {
-        title: 'Integration of media',
-        description:
-          'Seamlessly incorporate images, videos, and multimedia elements that enhance your content and engage visitors effectively.',
+        title: 'Soporte Confiable',
+        description: 'Accede a una amplia comunidad y a socios oficiales para resolver cualquier duda.',
       },
     ]}
     image={{
@@ -174,37 +166,33 @@ const metadata = {
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
-  </Content>
+  </Content>-->
 
   <!-- Content Widget **************** -->
 
-  <Content
+  <!--<Content
     isReversed
     isAfterContent
     items={[
       {
-        title: 'Enhanced user engagement',
-        description:
-          'Captivate your audience with interactive elements, intuitive navigation, and visually appealing layouts, encouraging longer visits.',
+        title: 'Mayor Eficiencia Operativa',
+        description: 'Reduce tiempos y costos al optimizar procesos internos.',
       },
       {
-        title: 'Continuous improvement',
-        description:
-          'Ensure your website stays aligned with the latest trends and technologies through regular updates and enhancements.',
+        title: 'Toma de Decisiones Informadas',
+        description: 'Basado en datos reales y análisis precisos de tu negocio.',
       },
       {
-        title: 'Time and resource efficiency',
-        description:
-          'Skip the time-consuming process of building a website from scratch and launch your online presence sooner with AstroWind.',
+        title: 'Satisfacción del Cliente',
+        description: 'Ofrece un servicio más rápido, personalizado y eficiente.',
       },
       {
-        title: 'Community support',
-        description: `Join the growing AstroWind community for insights, resources, and assistance, ensuring you're never alone on your web development journey.`,
+        title: 'Potencial de Crecimiento',
+        description: 'Libera tu potencial y enfócate en hacer crecer tu cafetería.',
       },
     ]}
     image={{
-      src: 'https://images.unsplash.com/photo-1611462985358-60d3498e0364?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
-      alt: 'Astronauts Image',
+      src: '~/assets/images/analytics-cafe.jpg', alt: 'Análisis de datos en una cafetería'
     }}
   >
     <Fragment slot="content">Designed to foster growth and success.</Fragment>
@@ -212,92 +200,84 @@ const metadata = {
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
-  </Content>
+  </Content>-->
 
   <!-- Steps Widget ****************** -->
 
-  <Steps
-    title="Get your dream website up and running in no time with AstroWind."
+  <!--<Steps
+    title="Implementa Odoo en tu Cafetería en Pocos Pasos"
     items={[
       {
-        title: 'Step 1: <span class="font-medium">Download</span>',
+        title: 'Paso 1: <span class="font-medium">Contáctanos</span>',
         description:
-          "Kickstart with GitHub! Either fork the AstroWind template or simply click 'Use this template'. Your canvas awaits, ready for your digital masterpiece. In just a few clicks, you've already set the foundation.",
+          'Déjanos tus datos y uno de nuestros expertos se pondrá en contacto contigo para entender las necesidades de tu cafetería.',
         icon: 'tabler:package',
       },
       {
-        title: 'Step 2: <span class="font-medium">Add content</span>',
+        title: 'Paso 2: <span class="font-medium">Personalización e Implementación</span>',
         description:
-          "Pour your vision into it. Add images, text, and all that jazz to breathe life into your digital space. Remember, it's the content that tells your story, so make it captivating.",
+          'Adaptaremos Odoo a los flujos de trabajo de tu negocio y te acompañaremos en todo el proceso de implementación.',
         icon: 'tabler:letter-case',
       },
       {
-        title: 'Step 3: <span class="font-medium">Customize styles</span>',
+        title: 'Paso 3: <span class="font-medium">Capacitación y Soporte</span>',
         description:
-          'Give it your personal touch. Tailor colors, fonts, and layouts until it feels just right. Your unique flair, amplified by AstroWind! Precision in design ensures a seamless user experience.',
+          'Capacitaremos a tu equipo para que aprovechen al máximo Odoo y te brindaremos soporte continuo.',
         icon: 'tabler:paint',
       },
       {
-        title: 'Ready!',
+        title: '¡Disfruta de los Beneficios!',
         icon: 'tabler:check',
       },
     ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1616198814651-e71f960c3180?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
-      alt: 'Steps image',
-    }}
-  />
+    image={{ src: '~/assets/images/steps-cafe.jpg', alt: 'Pasos para implementar Odoo' }}
+  />-->
 
   <!-- Features2 Widget ************** -->
 
-  <Features2
+  <!--<Features2
     title="Most used widgets"
     subtitle="Provides frequently used components for building websites using Tailwind CSS"
     tagline="Components"
     items={[
       {
-        title: 'Headers',
-        description: "Ever tried driving without GPS? Boom! That's why websites need headers for direction.",
+        title: 'Punto de Venta (POS)',
+        description: "Agiliza tus ventas y mejora la experiencia del cliente en el mostrador.",
         icon: 'flat-color-icons:template',
       },
       {
-        title: 'Heros',
-        description:
-          "Picture a superhero landing – epic, right? That's the job of a Hero section, making grand entrances!",
+        title: 'Gestión de Inventario',
+        description: "Controla tus ingredientes y productos terminados de forma precisa.",
         icon: 'flat-color-icons:gallery',
       },
       {
-        title: 'Features',
-        description:
-          'Where websites strut their stuff and show off superpowers. No holding back on the bragging rights here!',
+        title: 'CRM (Gestión de Clientes)',
+        description: "Conoce a tus clientes, registra sus preferencias y crea programas de fidelidad.",
         icon: 'flat-color-icons:approval',
       },
       {
-        title: 'Content',
-        description:
-          "Dive into the meat and potatoes of a site; without it, you'd just be window shopping. Content is king.",
+        title: 'Contabilidad Integrada',
+        description: "Simplifica tu contabilidad y obtén una visión clara de tus finanzas.",
         icon: 'flat-color-icons:document',
       },
       {
-        title: 'Call-to-Action',
-        description:
-          'That enthusiastic friend who\'s always urging, "Do it! Do it!"? Yeah, that\'s this button nudging you towards adventure.',
+        title: 'Informes y Análisis',
+        description: "Obtén métricas clave para tomar decisiones estratégicas para tu cafetería.",
         icon: 'flat-color-icons:advertising',
       },
       {
-        title: 'Pricing',
-        description: 'Behold the dessert menu of the website world. Tempting choices await, can you resist?',
+        title: 'Gestión de Compras',
+        description: "Optimiza tus pedidos a proveedores y gestiona tus gastos.",
         icon: 'flat-color-icons:currency-exchange',
       },
       {
-        title: 'Testimonial',
-        description: 'Step into the gossip corner! Here, other visitors spill the beans and share the juicy details.',
+        title: 'Gestión de Empleados',
+        description: "Administra a tu personal, horarios y nóminas.",
         icon: 'flat-color-icons:voice-presentation',
       },
       {
-        title: 'Contact',
-        description:
-          'Like a digital mailbox, but faster! Drop a line, ask a question, or send a virtual high-five. Ding! Message in.',
+        title: 'Marketing',
+        description: "Crea campañas para atraer y fidelizar a tus clientes.",
         icon: 'flat-color-icons:business-contact',
       },
       {
@@ -310,31 +290,27 @@ const metadata = {
     <Fragment slot="bg">
       <div class="absolute inset-0 bg-blue-50 dark:bg-transparent"></div>
     </Fragment>
-  </Features2>
+  </Features2>-->
 
   <!-- HighlightedPosts Widget ******* -->
 
-  <BlogLatestPosts
-    title="Find out more content in our Blog"
+  <!--<BlogLatestPosts
+    title="Recursos Adicionales"
     information={`The blog is used to display AstroWind documentation.
                         Each new article will be an important step that you will need to know to be an expert in creating a website using Astro + Tailwind CSS.
                         Astro is a very interesting technology. Thanks.
                 `}
-  />
+    items={[]}
+  />-->
 
   <!-- FAQs Widget ******************* -->
 
-  <FAQs
+  <!--<FAQs
     title="Frequently Asked Questions"
-    subtitle="Dive into the following questions to gain insights into the powerful features that AstroWind offers and how it can elevate your web development journey."
+    subtitle="Encuentra respuestas a las preguntas más comunes sobre Odoo para cafeterías."
     tagline="FAQs"
     classes={{ container: 'max-w-6xl' }}
     items={[
-      {
-        title: 'Why AstroWind?',
-        description:
-          "Michael Knight a young loner on a crusade to champion the cause of the innocent. The helpless. The powerless in a world of criminals who operate above the law. Here he comes Here comes Speed Racer. He's a demon on wheels.",
-      },
       {
         title: 'What do I need to start?',
         description:
@@ -359,41 +335,41 @@ const metadata = {
         title: 'If you could only ask one question to each person you meet, what would that question be?',
         description:
           "This is not about revenge. This is about justice. A lot of things can change in twelve years, Admiral. Well, that's certainly good to know. About four years. I got tired of hearing how young I looked.",
-      },
+      }
     ]}
-  />
+  />-->
 
   <!-- Stats Widget ****************** -->
 
-  <Stats
+  <!--<Stats
     stats={[
       { title: 'Downloads', amount: '132K' },
       { title: 'Stars', amount: '24.8K' },
       { title: 'Forks', amount: '10.3K' },
       { title: 'Users', amount: '48.4K' },
     ]}
-  />
+  />-->
 
   <!-- CallToAction Widget *********** -->
 
-  <CallToAction
+  <!--<CallToAction
     actions={[
       {
         variant: 'primary',
         text: 'Get template',
-        href: 'https://github.com/onwidget/astrowind',
+        href: '#contacto',
         target: '_blank',
-        icon: 'tabler:download',
+        icon: 'tabler:mail',
       },
     ]}
   >
     <Fragment slot="title">
-      Astro&nbsp;+&nbsp;<br class="block sm:hidden" /><span class="sm:whitespace-nowrap">Tailwind CSS</span>
+      ¿Listo para Potenciar tu Cafetería con <span class="sm:whitespace-nowrap">Odoo?</span>
     </Fragment>
 
     <Fragment slot="subtitle">
       Be very surprised by these huge fake numbers you are seeing on this page. <br class="hidden md:inline" />Don't
       waste more time! :P
     </Fragment>
-  </CallToAction>
+  </CallToAction>-->
 </Layout>
