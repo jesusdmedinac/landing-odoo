@@ -1,6 +1,6 @@
 site:
-  name: AstroWind
-  site: 'https://astrowind.vercel.app'
+  name: Odoo para Cafeterías
+  site: 'https://odoo.jesusdmedinac.com'
   base: '/'
   trailingSlash: false
 
@@ -9,26 +9,27 @@ site:
 # Default SEO metadata
 metadata:
   title:
-    default: AstroWind
-    template: '%s — AstroWind'
-  description: "\U0001F680 Suitable for Startups, Small Business, Sass Websites, Professional Portfolios, Marketing Websites, Landing Pages & Blogs."
+    default: Odoo para Cafeterías
+    template: '%s — Odoo para Cafeterías'
+  description: "\U0001F374 Potente solución ERP para cafeterías: Gestión integral de tu negocio, desde el punto de venta hasta la cocina y la contabilidad."
   robots:
     index: true
     follow: true
   openGraph:
-    site_name: AstroWind
+    site_name: Odoo para Cafeterías
     images:
       - url: '~/assets/images/default.png'
         width: 1200
         height: 628
+        alt: 'Odoo para Cafeterías - Solución ERP completa'
+    description: "Sistema ERP completo para cafeterías y restaurantes. Gestión de pedidos, inventario, personal y contabilidad todo en una sola plataforma."
     type: website
-  twitter:
-    handle: '@onwidget'
-    site: '@onwidget'
-    cardType: summary_large_image
+    locale: es_ES
+    title: "Odoo para Cafeterías - Solución ERP completa para tu negocio"
+    url: 'https://odoo.jesusdmedinac.com'
 
 i18n:
-  language: en
+  language: es
   textDirection: ltr
 
 apps:
