@@ -36,7 +36,7 @@ const headerDataTemplate = {
         },
         {
           text: 'Pricing',
-          href: getPermalink('/pricing'),
+          href: getPermalink('/precios'),
         },
         {
           text: 'About us',
@@ -119,7 +119,17 @@ const headerDataTemplate = {
 };
 
 export const headerData = {
-  links: [],
+  links: [
+    {
+      text: 'Páginas',
+      links: [
+        {
+          text: 'Precios',
+          href: getPermalink('/precios'),
+        },
+      ],
+    },
+  ],
   actions: [],
 };
 
@@ -133,7 +143,7 @@ export const footerDataTemplate = {
         { text: 'Team', href: '#' },
         { text: 'Enterprise', href: '#' },
         { text: 'Customer stories', href: '#' },
-        { text: 'Pricing', href: '#' },
+        { text: 'Precios', href: '#' },
         { text: 'Resources', href: '#' },
       ],
     },

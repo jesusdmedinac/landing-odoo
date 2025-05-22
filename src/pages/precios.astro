@@ -1,0 +1,253 @@
+---
+import Layout from '~/layouts/PageLayout.astro';
+import HeroText from '~/components/widgets/HeroText.astro';
+import Prices from '~/components/widgets/Pricing.astro';
+import FAQs from '~/components/widgets/FAQs.astro';
+import Steps from '~/components/widgets/Steps.astro';
+import Features3 from '~/components/widgets/Features3.astro';
+import CallToAction from '~/components/widgets/CallToAction.astro';
+
+const metadata = {
+  title: 'Precios',
+};
+---
+
+<Layout metadata={metadata}>
+  <!-- HeroText Widget ******************* -->
+
+  <HeroText
+    tagline="Precios"
+    title="Soluciones Odoo para tu restaurante o cafetería"
+    subtitle="Planes flexibles y personalizados para optimizar tus operaciones y aumentar tu rentabilidad"
+  />
+
+  <!-- Pricing Widget ******************* -->
+
+  <Prices
+    title="Planes de Odoo para tu negocio de hostelería"
+    subtitle="Escoge el paquete que mejor se adapte a tus necesidades y presupuesto"
+    prices={[
+      {
+        title: 'Básico',
+        subtitle: 'Mejor precio para pequeñas cafeterías',
+        price: 500,
+        period: 'por usuario al mes',
+        items: [
+          {
+            description: 'Sitio web',
+          },
+          {
+            description: 'Ventas',
+          },
+          {
+            description: 'Finanzas',
+          },
+          {
+            description: 'Inventario y fabricación'
+          },
+          {
+            description: 'Recursos humanos',
+          },
+          {
+            description: 'Marketing',
+          },
+          {
+            description: 'Servicios',
+          },
+          {
+            description: 'Productividad',
+          },
+          {
+            description: 'Personalización',
+          }
+        ],
+        callToAction: {
+          target: '_blank',
+          text: 'Agendar demo',
+          href: 'https://wa.me/526645142608',
+        },
+      },
+      {
+        title: 'Estándar',
+        subtitle: 'Mejor precio para cafeterías medianas',
+        price: 1000,
+        period: 'por usuario al mes',
+        items: [
+          {
+            description: 'Todo lo que viene en el plan Básico',
+          },
+          {
+            description: 'Instalación',
+          },
+          {
+            description: 'Soporte técnico',
+          },
+          {
+            description: 'Capacitación',
+          }
+        ],
+        callToAction: {
+          target: '_blank',
+          text: 'Agendar demo',
+          href: 'https://wa.me/526645142608',
+        },
+        hasRibbon: true,
+        ribbonTitle: 'popular',
+      },
+      {
+        title: 'Premium',
+        subtitle: 'Precio personalizado para cadenas de restaurantes',
+        price: 'Precio',
+        period: 'Personalizado',
+        items: [
+          {
+            description: 'Todo lo que viene en el plan Estándar',
+          },
+          {
+            description: 'Usuarios ilimitados',
+          },
+          {
+            description: 'Desarrollo a la medida',
+          }
+        ],
+        callToAction: {
+          target: '_blank',
+          text: 'Agendar demo',
+          href: 'https://wa.me/526645142608',
+        },
+      },
+    ]}
+  />
+
+  <!-- Features3 Widget ************** -->
+
+  <Features3
+    title="Características de los planes"
+    subtitle="Descubre los beneficios de escoger nuestros planes"
+    columns={2}
+    items={[
+      {
+        title: 'Planos de precios escalados',
+        description: 'Escoge entre un rango de planes de precios diseñados para adaptarse a diferentes presupuestos y requisitos.',
+        icon: 'tabler:stairs',
+      },
+      {
+        title: 'Precios transparentes',
+        description: 'Detalles de precios claros para cada plan, sin cargos ocultos o cargos inesperados.',
+        icon: 'tabler:flip-vertical',
+      },
+      {
+        title: 'Métodos de pago seguros',
+        description: 'Gestores de pagos seguros para proteger tu información financiera durante las transacciones.',
+        icon: 'tabler:shield-lock',
+      },
+      {
+        title: 'Acceso inmediato',
+        description: `Acceso inmediato a las características y plantillas de tu plan elegido al suscribirte.`,
+        icon: 'tabler:accessible',
+      },
+      {
+        title: 'Valor de actualización',
+        description: 'Actualiza a planes superiores para desbloquear más características y beneficios para una experiencia mejorada.',
+        icon: 'tabler:chevrons-up',
+      },
+      {
+        title: 'Soporte 24/7',
+        description: 'Respuestas a preguntas a través de chat en vivo, correo electrónico o teléfono, todos los días del calendario.',
+        icon: 'tabler:headset',
+      },
+    ]}
+    classes={{ container: 'max-w-5xl' }}
+  />
+
+  <!-- Steps Widget ****************** -->
+
+  <Steps
+    title="Un viaje guiado desde los planes a la creatividad"
+    tagline="proceso simplificado"
+    isReversed={true}
+    items={[
+      {
+        title: 'Explorar planes',
+        icon: 'tabler:number-1',
+      },
+      {
+        title: 'Seleccionar un plan',
+        icon: 'tabler:number-2',
+      },
+      {
+        title: 'Registrarse / Iniciar sesión',
+        icon: 'tabler:number-3',
+      },
+      {
+        title: 'Revisar orden',
+        icon: 'tabler:number-4',
+      },
+      {
+        title: 'Ingresar detalles de pago',
+        icon: 'tabler:number-5',
+      },
+      {
+        title: 'Confirmación',
+        icon: 'tabler:number-6',
+      },
+      {
+        title: 'Descargar y comenzar a usar el template(s)',
+        icon: 'tabler:number-7',
+      },
+    ]}
+    image={{
+      src: 'https://images.unsplash.com/photo-1536816579748-4ecb3f03d72a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=987&q=80',
+      alt: 'Steps image',
+    }}
+  />
+
+  <!-- FAQs Widget ******************* -->
+
+  <!--<FAQs
+    title="Preguntas frecuentes sobre precios"
+    subtitle="Elige el plan correcto es importante, y estamos aquí para responder tus preguntas. Si tienes dudas sobre nuestras opciones de precios, estás en el lugar correcto."
+    columns={1}
+    items={[
+      {
+        title: '¿Los planes vienen con soporte al cliente?',
+        description:
+          'Sí, todos los planes incluyen acceso a nuestro soporte al cliente dedicado para ayudarte con cualquier consulta o preocupación.',
+      },
+      {
+        title: '¿Hay un periodo de prueba para los diferentes planes?',
+        description:
+          "Lamentablemente, no ofrecemos periodos de prueba para los planes. Sin embargo, puedes revisar nuestra sección de demostración para previsualizar la calidad de nuestros plantillas.",
+      },
+      {
+        title: '¿Puedo cambiar entre planes?',
+        description:
+          '¡Por supuesto! Puedes actualizar o disminuir tu plan en cualquier momento para encontrar el que mejor se adapte a tus necesidades evolucionantes.',
+      },
+      {
+        title: '¿Qué métodos de pago aceptas?',
+        description:
+          'Aceptamos tarjetas de crédito principales y métodos de pago en línea para garantizar un proceso de transacción conveniente y seguro.',
+      },
+      {
+        title: '¿Hay cargos ocultos más allá del costo mostrado?',
+        description:
+          'No, el costo de suscripción cubre todas las características y plantillas listadas bajo cada plan. No hay cargos ocultos o cargos adicionales.',
+      },
+    ]}
+  /> -->
+
+  <!-- CallToAction Widget *********** -->
+
+  <CallToAction
+    title="Listo para impulsar tus proyectos?"
+    subtitle="Únete a nuestra comunidad de clientes satisfechos que han transformado su trabajo con nuestros plantillas."
+    actions={[
+      {
+        variant: 'primary',
+        text: 'Agendar demo',
+        href: 'https://wa.me/526645142608',
+      },
+    ]}
+  />
+</Layout>
